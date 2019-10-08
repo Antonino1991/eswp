@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="./css/exercise.css" />
 <title>First HTML project</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
 </head>
 <body>
 
@@ -12,37 +14,57 @@
 	<hr />
 	<form action="/comment" method="post">
 		<div>
-			<label for="name">UserId:</label> <input type="text" id="name"
-				name="sender" required>
+
+			<label for="name">Administrator_id:</label> <input type="text"
+				id="name" name="sender" required>
+
 		</div>
 		<div>
+
 			<label for="password">Password:</label> <input type="password"
 				id="password" name="pwd" maxlength="30" required>
+
 		</div>
 		<div>
 			<button type="submit">Login</button>
 		</div>
+		<hr/>
+		<p>
+			Visualizza la nostra <a
+				href="http://localhost:8080/eswp/Tabella_Orari.html">tabella</a> e
+			decidi quando partire.
+		</p>
 	</form>
-	<hr />
+
 	<h2>PREVENTIVO DI VIAGGIO</h2>
 	<form action="/comment" method="post">
-	
 		<div>
-		<fieldset><p>Seleziona la tua tratta</p>
+			<p id="msg1">
+				CLASSE SELEZIONATA <b>PRIMA</b>
+			</p>
+			<input type="button" value=" Seleziona la classe " id="changeMsg1">
+
+		</div>
+
+
+
+		<div>
+
+			<p>Seleziona la tua tratta</p>
 			<select name="os">
-                <option value="none">-</option>
-                <option value="Mi-Ro">Mi-Ro</option>
-                <option value="Mi-Fi">Mi-Fi</option>
-                <option value="Mi-Rc">Mi-Rc</option>
-                <option value="Mi-Ba">Mi-Ba</option>
-                <option value="Mi-Ge">Mi-Ge</option>
-                <option value="Ro-Mi">Ro-Mi</option>
-                <option value="Fi-Mi">Fi-Mi</option>
-                <option value="Rc-Mi">Rc-Mi</option>
-                <option value="Ba-Mi">Ba-Mi</option>
-                <option value="Ge-Mi">Ge-Mi</option>
-            </select>
-            </fieldset>
+				<option value="none">-</option>
+				<option value="Mi-Ro">Mi-Ro</option>
+				<option value="Mi-Fi">Mi-Fi</option>
+				<option value="Mi-Rc">Mi-Rc</option>
+				<option value="Mi-Ba">Mi-Ba</option>
+				<option value="Mi-Ge">Mi-Ge</option>
+				<option value="Ro-Mi">Ro-Mi</option>
+				<option value="Fi-Mi">Fi-Mi</option>
+				<option value="Rc-Mi">Rc-Mi</option>
+				<option value="Ba-Mi">Ba-Mi</option>
+				<option value="Ge-Mi">Ge-Mi</option>
+			</select>
+
 		</div>
 		<div>
 			Data andata: <input type="date" name="partenza" required
@@ -53,38 +75,21 @@
 				placeholder="seleziona la data " />
 		</div>
 		<div>
-			<input type="radio" id="favJ" name="andataritorno" value="andata" checked />
-            <label for="andataritorno">Andata</label>
-            <input type="radio" id="favPy" name="andataritorno" value="andata e ritorno" />
-            <label for="andataritorno">Andata e Ritorno</label>
+			<input type="radio" id="favJ" name="andataritorno" value="andata"
+				checked /> <label for="andataritorno">Andata</label> <input
+				type="radio" id="favPy" name="andataritorno"
+				value="andata e ritorno" /> <label for="andataritorno">Andata
+				e Ritorno</label>
 		</div>
 		<div>
 			<button type="submit">GO!</button>
 		</div>
 	</form>
-	<hr />
-	<h2>
-		Titolare biglietto : <i> Antonino Scarfone userID:174565</i>
-	</h2>
-
-	<h2>Prenotazione ticket</h2>
 
 
-	<p>
-		Tratta <b>"MI-RC"</b><br /> <br /> data partenza : 10/10/2019<br />
-		data arrivo : 11/10/2019 <br /> <br />Orario di partenza: 18:00 <br />Orario
-		di arrivo: 6:30 <br /> <br /> <b>TRENO</b>: <i>FRECCIAROSSA 100</i>
-	</p>
-	<hr>
-	<h4>
-		Prezzo prima classe : &euro; 60,00 <br /> POSTI DISPONIBILI 56/100
-	</h4>
-	<h4>
-		Prezzo seconda classe : &euro; 45,00 <br /> POSTI DISPONIBILI 23/100
-	</h4>
 	<hr>
 	<p>Titolo di viaggio non rimborsabile , per eventuali lamentele
-		rivolgiti ai nostri dipendenti.</p> 
+		rivolgiti ai nostri dipendenti.</p>
 
 	<p>
 		<a href="mailto:LucyLucy@redtrain.com"> scrivi una mail per ogni

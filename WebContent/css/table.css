@@ -1,0 +1,38 @@
+.content{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin: 40px auto;
+	background-image:
+		url("../pic/sfondo.jpg" );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	max-width: 960px;
+	border-radius: 5px;
+	padding-bottom: 32px;
+}
+
+
+
+
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    background-color: window;
+}
+
+td {
+    background-color: silver;
+}@charset "ISO-8859-1";
